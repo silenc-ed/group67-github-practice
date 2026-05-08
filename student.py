@@ -6,6 +6,10 @@ class Student:
 
 students = []
 
+def set_students(loaded_students):
+    global students
+    students = loaded_students
+
 def add_student(student_id, name, major):
     for s in students:
         if s.student_id == student_id:
